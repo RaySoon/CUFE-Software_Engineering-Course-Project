@@ -1,0 +1,41 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/deployFunctions/deployFunctions",
+    "pages/chooseLib/chooseLib",
+    "pages/user/user"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "软工作业测试",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "Calender",
+        "iconPath": "images/calender.png",
+        "selectedIconPath": "images/calender_new.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "Setting",
+        "iconPath": "images/setting.png",
+        "selectedIconPath": "images/setting_HL.png"
+      }
+    ]
+  },
+  "selectedColor": "#49C01B",
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}
