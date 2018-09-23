@@ -75,8 +75,10 @@ Page({
       header: {},
       success: function(res) {
         wx.hideToast()
-        if(false){
-
+        if(res.data.toString!=0){
+          wx.switchTab({
+            url: '../../pages/index/index',
+          })
         } 
         else( 
           wx.showModal({

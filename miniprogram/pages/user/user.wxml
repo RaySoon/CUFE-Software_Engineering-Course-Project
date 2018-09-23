@@ -18,7 +18,7 @@
     </view>
     <view class='section'>
       <view class='btn-area'>
-        <button type='default'>Register</button>
+        <button type='default'>Forget Password</button>
       </view>
     </view>
   </view>
