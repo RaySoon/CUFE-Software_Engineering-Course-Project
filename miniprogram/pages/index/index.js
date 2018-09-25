@@ -1,5 +1,6 @@
 //index.js
 const app = getApp()
+var order = ['red', 'yellow', 'blue', 'green', 'red']
 
 Page({
   data: {
@@ -8,7 +9,18 @@ Page({
     logged: false,
     takeSession: false,
     requestResult: '',
-    text:'Hello World !'
+    // text: 'Hello World !',
+    toView: 'red',
+    scrollTop: 100,
+    background: ['demo-text-1', 'demo-text-2', 'demo-text-3'],
+    indicatorDots: true,
+    vertical: false,
+    autoplay: true,
+    circular: true,
+    interval: 2000,
+    duration: 500,
+    previousMargin: 0,
+    nextMargin: 0
   },
 
   onLoad: function() {
@@ -46,6 +58,56 @@ Page({
       })
     }
   },
+  upper: function(e) {
+    console.log(e)
+  },
+  lower: function(e) {
+    console.log(e)
+  },
+  scroll: function(e) {
+    console.log(e)
+  },
+  tap: function(e) {
+    for (var i = 0; i < order.length; ++i) {
+      if (order[i] === this.data.toView) {
+        this.setData({
+          toView: order[i + 1]
+        })
+        break
+      }
+    }
+  },
+  tapMove: function(e) {
+    this.setData({
+      scrollTop: this.data.scrollTop + 10
+    })
+  },
+  changeProperty: function (e) {
+    var propertyName = e.currentTarget.dataset.propertyName
+    var newData = {}
+    newData[propertyName] = e.detail.value
+    this.setData(newData)
+  },
+  changeIndicatorDots: function (e) {
+    this.setData({
+      indicatorDots: !this.data.indicatorDots
+    })
+  },
+  changeAutoplay: function (e) {
+    this.setData({
+      autoplay: !this.data.autoplay
+    })
+  },
+  intervalChange: function (e) {
+    this.setData({
+      interval: e.detail.value
+    })
+  },
+  durationChange: function (e) {
+    this.setData({
+      duration: e.detail.value
+    })
+  }
 
   // onGetOpenid: function() {
   //   // 调用云函数
@@ -82,7 +144,7 @@ Page({
   //       })
 
   //       const filePath = res.tempFilePaths[0]
-        
+
   //       // 上传图片
   //       const cloudPath = 'my-image' + filePath.match(/\.[^.]+?$/)[0]
   //       wx.cloud.uploadFile({
@@ -94,7 +156,7 @@ Page({
   //           app.globalData.fileID = res.fileID
   //           app.globalData.cloudPath = cloudPath
   //           app.globalData.imagePath = filePath
-            
+
   //           wx.navigateTo({
   //             url: '../storageConsole/storageConsole'
   //           })
