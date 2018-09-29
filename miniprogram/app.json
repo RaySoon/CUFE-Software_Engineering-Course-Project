@@ -1,36 +1,31 @@
 {
-  "cloud": true,
   "pages": [
     "pages/index/index",
-    "pages/user/user"
+    "pages/logs/logs",
+    "pages/usercenter/usercenter"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
+    "backgroundColor": "#F6F6F6",
     "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "软工作业测试",
+    "navigationBarTitleText": "SESP TEST",
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
+    "selectedColor": "#1AAD16",
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "Calender",
+        "text": "头条",
         "iconPath": "images/calender.png",
-        "selectedIconPath": "images/calender_new.png"
+        "selectedIconPath": "images/calender_HL.png"
       },
       {
-        "pagePath": "pages/user/user",
-        "text": "Setting",
-        "iconPath": "images/setting.png",
-        "selectedIconPath": "images/setting_HL.png"
+        "pagePath": "pages/usercenter/usercenter",
+        "text": "个人中心",
+        "iconPath": "images/user.png",
+        "selectedIconPath": "images/user_s.png"
       }
     ]
-  },
-  "selectedColor": "#49C01B",
-  "networkTimeout": {
-    "request": 10000,
-    "downloadFile": 10000
-  },
-  "debug": true
+  }
 }
