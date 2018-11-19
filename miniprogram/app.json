@@ -1,8 +1,6 @@
 {
   "pages": [
     "pages/lptest/lptest",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/usercenter/usercenter"
     
   ],
