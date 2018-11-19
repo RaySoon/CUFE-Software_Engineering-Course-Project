@@ -1,4 +1,4 @@
-﻿// miniprogram/pages/lptest/lptest.js
+// miniprogram/pages/lptest/lptest.js
 Page({
 
   /**
@@ -64,7 +64,7 @@ Page({
         }]
       },
       {
-        "time_title": "下午一二节", "Mon_text": [{
+        "time_title": "五六节", "Mon_text": [{
           "data": "1-1",
           "name": "软件工程",
           "time": " (1-2节)1-17周(单)",
@@ -92,7 +92,7 @@ Page({
         }]
       },
       {
-        "time_title": "下午三四节", "Mon_text": [{
+        "time_title": "七八节", "Mon_text": [{
           "data": "1-1",
           "name": "软件工程",
           "time": " (1-2节)1-17周(单)",
