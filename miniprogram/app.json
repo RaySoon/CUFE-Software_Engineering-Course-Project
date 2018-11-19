@@ -1,6 +1,7 @@
 {
   "pages": [
-    "pages/lptest/lptest",
+    "pages/schedule/schedule",
+    "pages/library/library",
     "pages/usercenter/usercenter"
     
   ],
@@ -15,13 +16,13 @@
     "selectedColor": "#1AAD16",
     "list": [
       {
-        "pagePath": "pages/lptest/lptest",
+        "pagePath": "pages/schedule/schedule",
         "text": "课程表",
         "iconPath": "images/calender.png",
         "selectedIconPath": "images/calender_HL.png"
       },
       {
-        "pagePath": "pages/lptest/lptest",
+        "pagePath": "pages/library/library",
         "text": "座位查询",
         "iconPath": "images/calender.png",
         "selectedIconPath": "images/calender_HL.png"

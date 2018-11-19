@@ -1,5 +1,2 @@
-<<<<<<< Updated upstream
 This is the semester project of software engineering course in CUFE.
-=======
-This is the semester project of software engineering course in CUFE.
->>>>>>> Stashed changes
+Team Members: [RaySoon](https://github.com/RaySoon)  [Andrew201801](https://github.com/Andrew201801)  [dragonroclp](https://github.com/dragonroclp)  [CrocoRyan](https://github.com/CrocoRyan)
