@@ -30,7 +30,13 @@
         </view>
       </block>
     </view>
-    <text>\n</text>
+
+
+
+    <view class="divLine"></view>
+    <view class="divLine"></view>
+
+
 <!-- 循环测试 -->
     <block wx:for="{{sch_listData}}">
       <view class='table_main'>
@@ -60,7 +66,12 @@
         </view>
       </view>
     </block>
-    <text>\n</text>
+
+
+   <view class="divLine"></view>
+   <view class="divLine"></view>
+
+   
     <block wx:for="{{after_noon}}">
       <view class='table_main'>
         <view class="td" style="width:125rpx;height:90rpx;background-color:white;">
@@ -89,7 +100,11 @@
         </view>
       </view>
     </block>
-    <text>\n</text>
+
+
+    <view class="divLine"></view>
+    <view class="divLine"></view>
+
     <block wx:for="{{night}}">
       <view class='table_main'>
         <view class="td" style="width:125rpx;height:90rpx;background-color:white;">
