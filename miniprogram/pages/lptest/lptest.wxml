@@ -4,16 +4,18 @@
 <text>\n</text>
 <view>
   <view class="weui-cell">
-    <view class="weui-cell__hd" style="width:20px;margin-right:5px;display:block">
+    <view class="weui-cell__hd" style="width:40px;margin-right:20rpx;margin-left:20rpx;display:block">
       <open-data type="userAvatarUrl"></open-data>
     </view>
     <view class="weui-cell__bd">
-      <p>孙瑞</p>
+      <open-data type="userNickName"></open-data>
     </view>
       <view class="weui-cell__ft">2016312336</view>
     </view>
 </view>
-<text>\n</text>
+<view class="headLine"></view>
+<!-- <text>\n</text> -->
+
 
 </view>
   <scroll-view scroll-x="true" class='scrollClass'>
@@ -188,7 +190,7 @@
 <div class="pages">
   <div class="page__bd page__bd_spacing">
     <div class="weui-footer weui-footer_fixed-bottom">
-      <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+      <p class="weui-footer__text">Copyright © 2016-2018 CUFE.INFO.CS.16</p>
     </div>
   </div>
 </div>
