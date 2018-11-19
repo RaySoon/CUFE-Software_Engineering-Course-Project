@@ -1,17 +1,27 @@
 <!--miniprogram/pages/lptest/lptest.wxml-->
 <!--table测试-->
 <view class='content'>
-<view></view>
-<view>disabled</view>
-<view>Name</view>
-<view>Stu ID</view>
+<text>\n</text>
+<view>
+  <view class="weui-cell">
+    <view class="weui-cell__hd" style="width:20px;margin-right:5px;display:block">
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class="weui-cell__bd">
+      <p>孙瑞</p>
+    </view>
+      <view class="weui-cell__ft">2016312336</view>
+    </view>
+</view>
+<text>\n</text>
+
 </view>
   <scroll-view scroll-x="true" class='scrollClass'>
    <view class='table'>
 
 
     <view class='table_header'>
-      <view class="th" style='width:145rpx;background-color:white'>
+      <view class="th" style='width:125rpx;background-color:white'>
         <view class='centerclass cell_label'>星期</view>
       </view>
       <block wx:for="{{dateArray}}">
@@ -20,13 +30,11 @@
         </view>
       </block>
     </view>
+    <text>\n</text>
 <!-- 循环测试 -->
     <block wx:for="{{sch_listData}}">
       <view class='table_main'>
-
-         
-
-        <view class="td" style="width:145rpx;height:90rpx;background-color:white;">
+        <view class="td" style="width:125rpx;height:90rpx;background-color:white;">
         <view class="cell_label centerclass">{{item.time_title}}</view>
         </view>
 
@@ -50,8 +58,64 @@
         <view class="td" wx:for="{{item.Fri_text}}" wx:for-item="days" wx:key="data">
         <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
         </view>
+      </view>
+    </block>
+    <text>\n</text>
+    <block wx:for="{{after_noon}}">
+      <view class='table_main'>
+        <view class="td" style="width:125rpx;height:90rpx;background-color:white;">
+        <view class="cell_label centerclass">{{item.time_title}}</view>
+        </view>
+
+        <view class="td" wx:for="{{item.Mon_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
+
         
+        <view class="td" wx:for="{{item.Tues_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
+
+        <view class="td" wx:for="{{item.Wed_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
+
+        <view class="td" wx:for="{{item.Thur_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
         
+        <view class="td" wx:for="{{item.Fri_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
+      </view>
+    </block>
+    <text>\n</text>
+    <block wx:for="{{night}}">
+      <view class='table_main'>
+        <view class="td" style="width:125rpx;height:90rpx;background-color:white;">
+        <view class="cell_label centerclass">{{item.time_title}}</view>
+        </view>
+
+        <view class="td" wx:for="{{item.Mon_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
+
+        
+        <view class="td" wx:for="{{item.Tues_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
+
+        <view class="td" wx:for="{{item.Wed_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
+
+        <view class="td" wx:for="{{item.Thur_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
+        
+        <view class="td" wx:for="{{item.Fri_text}}" wx:for-item="days" wx:key="data">
+        <view class="table_Text_last_class" bindtap='clickClass' data-place='{{days.place}}'>{{days.name}}</view>
+        </view>
       </view>
     </block>
 
@@ -105,6 +169,15 @@
 
   </view>
   </scroll-view>
+
+<div class="pages">
+  <div class="page__bd page__bd_spacing">
+    <div class="weui-footer weui-footer_fixed-bottom">
+      <p class="weui-footer__text">Copyright © 2008-2016 weui.io</p>
+    </div>
+  </div>
+</div>
+
 
   
 
