@@ -18,21 +18,21 @@
     "list": [
       {
         "pagePath": "pages/lptest/lptest",
-        "text": "头条",
+        "text": "课程表",
+        "iconPath": "images/calender.png",
+        "selectedIconPath": "images/calender_HL.png"
+      },
+      {
+        "pagePath": "pages/lptest/lptest",
+        "text": "座位查询",
         "iconPath": "images/calender.png",
         "selectedIconPath": "images/calender_HL.png"
       },
       {
         "pagePath": "pages/usercenter/usercenter",
-        "text": "个人中心",
+        "text": "设置",
         "iconPath": "images/user.png",
         "selectedIconPath": "images/user_s.png"
-      },
-      {
-        "pagePath": "pages/lptest/lptest",
-        "text": "lptest",
-        "iconPath": "images/calender.png",
-        "selectedIconPath": "images/calender_HL.png"
       }
     ]
   }
