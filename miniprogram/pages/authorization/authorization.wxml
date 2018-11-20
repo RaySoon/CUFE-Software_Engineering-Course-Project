@@ -9,6 +9,29 @@
     <open-data type="userNickName"></open-data>
   </view>
 
-  <view class="weui-cells__title">图书馆座位查询</view>
 
+  <form bindsubmit="formSubmit">
+    <div class="weui-cells__title">教务管理系统授权</div>
+    <div class="weui-cells weui-cells_form">
+      <div class="weui-cell">
+        <div class="weui-cell__hd">
+          <label class="weui-label">学号</label>
+        </div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" name="ID" type="number" pattern="^[0-9]{10}$" placeholder="请输入学号" />
+        </div>
+      </div>
+      <div class="weui-cell">
+        <div class="weui-cell__hd">
+          <label class="weui-label">密码</label>
+        </div>
+        <div class="weui-cell__bd">
+          <input class="weui-input" name="password" type="password" value="" />
+        </div>
+      </div>
+    </div>
+    <div class="weui-cells__tips">授权仅用于获取课程表</div>
+    <text>\n\n</text>
+    <button class="btn_login" formType="submit">授权</button>
+  </form>
 </view>
