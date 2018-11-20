@@ -20,7 +20,7 @@
       </view>
       <view class="weui-cell__ft">说明文字</view>
     </view>
-    <view class="weui-cell weui-cell_access" href="javascript:;">
+    <view class="weui-cell weui-cell_access" bindtap='authorization'>
       <view class="weui-cell__hd" style="width:20px;margin-right:5px;display:block">
         <open-data type="userAvatarUrl"></open-data>
       </view>

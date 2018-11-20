@@ -429,7 +429,16 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+    // var D = date.getDate() < 10 ? '0' + date.getDate() : date.getDate();
+    // var h = date.getHours();
+    // var m = date.getMinutes();
+    // var s = date.getSeconds();
+    // console.log("当前时间：" + Y + M + D + h + ":" + m + ":" + s);
+    // data: {
+    //   time: [{
 
+    //   }]
+    // }
   },
 
   /**
