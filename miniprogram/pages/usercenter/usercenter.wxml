@@ -11,15 +11,6 @@
 
   <view class="weui-cells__title">个人设置</view>
   <view class="weui-cells">
-    <!-- <view class="weui-cell">
-      <view class="weui-cell__hd" style="width:20px;margin-right:5px;display:block">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <view class="weui-cell__bd">
-        <p>设置</p>
-      </view>
-      <view class="weui-cell__ft">说明文字</view>
-    </view> -->
     <view class="weui-cell weui-cell_access" bindtap='authorization'>
       <view class="weui-cell__hd" style="width:20px;margin-right:5px;display:block">
         <open-data type="userAvatarUrl"></open-data>
@@ -27,12 +18,18 @@
       <view class="weui-cell__bd">
         <p>更改授权</p>
       </view>
-      <view class="weui-cell__ft">说明文字</view>
+      <view class="weui-cell__ft"></view>
     </view>
   </view>
   
 
-
+<view class="pages">
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-footer weui-footer_fixed-bottom">
+      <p class="weui-footer__text">Copyright © 2016-2018 CUFE.INFO.CS.16</p>
+    </view>
+  </view>
+</view>
 
 
 </view>

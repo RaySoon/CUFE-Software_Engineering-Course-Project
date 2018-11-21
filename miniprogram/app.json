@@ -3,7 +3,9 @@
     "pages/curriculum/curriculum",
     "pages/library/library",
     "pages/usercenter/usercenter",
-    "pages/authorization/authorization"
+    "pages/authorization/authorization",
+    "pages/success/success",
+    "pages/error/error"
     
   ],
   "window": {

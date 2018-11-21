@@ -193,13 +193,13 @@
   </view>
   </scroll-view>
 
-<div class="pages">
-  <div class="page__bd page__bd_spacing">
-    <div class="weui-footer weui-footer_fixed-bottom">
+<view class="pages">
+  <view class="page__bd page__bd_spacing">
+    <view class="weui-footer weui-footer_fixed-bottom">
       <p class="weui-footer__text">Copyright © 2016-2018 CUFE.INFO.CS.16</p>
-    </div>
-  </div>
-</div>
+    </view>
+  </view>
+</view>
 
 
   
