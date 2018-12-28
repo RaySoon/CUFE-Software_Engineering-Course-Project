@@ -150,8 +150,18 @@ Page({
 
         success: function(res) {
           var sch=res.data;
+          console.log(sch.length)
+          console.log(sch)
+          if(sch.length==7){
+            console.log("12345")
+            wx.redirectTo({
+              url: '../error/error'
+            })
+
+          }
+          else{
           console.log(sch);
-          wx.setStorageSync({
+          wx.setStorage({
             key: 'kechen',
             data: sch,
             success: function (res) {
@@ -163,6 +173,8 @@ Page({
           wx.redirectTo({
             url: '../success/success'
           })
+
+          }
 
         },
 
