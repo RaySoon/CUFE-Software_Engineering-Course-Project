@@ -10,27 +10,21 @@
   </view>
 
   <view class="weui-cells__title">图书馆座位查询</view>
-  <!-- <view class="weui-cells">
-    <view class="weui-cell">
-      <view class="weui-cell__hd" style="width:20px;margin-right:5px;display:block">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <view class="weui-cell__bd">
-        <p>设置</p>
-      </view>
-      <view class="weui-cell__ft">说明文字</view>
+      <div class="weui-cell">
+        <div class="weui-cell__hd">
+          <label class="weui-label">姓名</label>
+        </div>
+        <div class="weui-cell__bd">
+          <input class="input" name="userName"   placeholder="请输入姓名" bindinput='userNameInput'/>
+        </div>
+      </div>
+    <text> \n </text>
+    <text> \n </text>
+    <text> \n </text>
+    <view>
+    <button class="getCodeView" bindtap="getSite">点击查询</button>
     </view>
-    <view class="weui-cell weui-cell_access" href="javascript:;">
-      <view class="weui-cell__hd" style="width:20px;margin-right:5px;display:block">
-        <open-data type="userAvatarUrl"></open-data>
-      </view>
-      <view class="weui-cell__bd">
-        <p>更改授权</p>
-      </view>
-      <view class="weui-cell__ft">说明文字</view>
-    </view>
-  </view> -->
-  
+<!-- weui-btn weui-btn_primary -->
 
 
 <view class="pages">

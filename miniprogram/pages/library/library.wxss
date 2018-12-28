@@ -24,3 +24,10 @@
 .weui-footer{
   margin-bottom: 80rpx
 }
+.getCodeView { 
+  width: 80%;
+  margin-top: 20rpx;
+  background-color: rgb(81, 179, 51);
+  color: white;
+
+}

@@ -37,5 +37,10 @@
         "selectedIconPath": "images/user_s.png"
       }
     ]
+    ,
+    "networkTimeout":{
+      "request":60000
+
+    }
   }
 }

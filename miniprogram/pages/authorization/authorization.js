@@ -137,7 +137,7 @@ Page({
     } else {
 
       wx.request({
-        url: '#',
+        url: 'http://10.11.229.144/wechat.do',
         header: {
           "Content-Type": "application/x-www-form-urlencoded"
         },
@@ -145,28 +145,38 @@ Page({
         method: "POST",
         data: {
           ID: e.detail.value.ID,
-          password: e.detail.value.password
+          psw: e.detail.value.password
         },
 
         success: function(res) {
+          var sch=res.data;
+          console.log(sch);
+          wx.setStorage({
+            key: 'kechen',
+            data: sch,
+            success: function (res) {
+              console.log('异步保存成功')
+            }
 
-          if (res.data.status == 0) {
+          })
+          // if (res.data.status == 0) {
 
-            wx.showToast({
-              title: res.data.info,
-              icon: 'loading',
-              duration: 1500
-            })
+          //   wx.showToast({
+          //     title: res.data.info,
+          //     icon: 'loading',
+          //     duration: 1500
+          //   })
 
-          } else {
+          // } else {
 
-            wx.showToast({
-              title: res.data.info, //这里打印出登录成功
-              icon: 'success',
-              duration: 1000
-            })
+          //   wx.showToast({
+          //     title: res.data.info, //这里打印出登录成功
+          //     icon: 'success',
+          //     duration: 1000
+          //   })
 
-          }
+          // }
+
 
         }
 

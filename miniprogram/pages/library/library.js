@@ -5,7 +5,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    canIUse: wx.canIUse('button.open-type.getUserInfo')
+    canIUse: wx.canIUse('button.open-type.getUserInfo'),
+
+    userName:""
+
   },
   
   /**
@@ -74,5 +77,54 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+  userNameInput:function(e){
+    var that = this;
+    that.setData({
+      userName:e.detail.value
+    })
+  },
+  getSite:function(){
+    var that=this;
+    var nameParam=that.data.userName;
+
+    wx.request({
+      url: 'http://10.11.229.144/Library.do',
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded"
+      },
+
+      method: "GET",
+      data: {
+        name: nameParam
+      },
+
+      success: function (res) {
+        var sch = res.data;
+        
+        wx.showModal({
+          title: '提示',
+          content:sch,
+          showCancel: false,
+          confirmText: "确定",
+          // confirmColor: "#0f0",
+          success: function (res) {
+            if (res.confirm) {
+              console.log('用户点击确定')
+            }
+          }
+        })
+       
+      }
+
+    })
+
+
+
+
+    
+
   }
+
+
 })
