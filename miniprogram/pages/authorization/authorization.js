@@ -100,7 +100,7 @@ Page({
         success: function (res) {
           if (res.confirm) {
             console.log('用户点击确定')
-          }
+          } 
         }
       })
       
@@ -151,15 +151,35 @@ Page({
         success: function(res) {
           var sch=res.data;
           console.log(sch);
-          wx.setStorage({
+          wx.setStorageSync({
             key: 'kechen',
             data: sch,
             success: function (res) {
-              console.log('异步保存成功')
+              console.log('同步保存成功')
             }
 
           })
-          // if (res.data.status == 0) {
+
+          wx.redirectTo({
+            url: '../success/success'
+          })
+
+        },
+
+        fail:function(){
+          wx.redirectTo({
+            url: '../error/error'
+          })
+
+        }
+
+      })
+
+    }
+
+  }
+})
+  // if (res.data.status == 0) {
 
           //   wx.showToast({
           //     title: res.data.info,
@@ -176,13 +196,3 @@ Page({
           //   })
 
           // }
-
-
-        }
-
-      })
-
-    }
-
-  }
-})
